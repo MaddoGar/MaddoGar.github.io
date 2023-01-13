@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CERN Requirements</title>
+    <link rel="stylesheet" href="css/stylesidepage.css">
+    <style>
+        h2 {text-align: center;}
+        p {text-align: center;}
+        </style>
+</head>
+
+<h2 id = "requirements">CERN Requirements</h2>
+
+<p>To be a practical system in the CERN environment, there are a number of
+clear practical requirements.</p>
+
+<h3>Remote access across networks.</h3>
+
+<p>CERN is distributed, and access from remote machines is essential.</p>
+
+<h3>Heterogeneity</h3>
+
+<p>Access is required to the same data from different types of system (VM/CMS,
+Macintosh, VAX/VMS, Unix)</p>
+
+<h3>Non-Centralisation</h3>
+
+<p>Information systems start small and grow. They also start isolated and then
+merge. A new system must allow existing systems to be linked together without
+requiring any central control or coordination.</p>
+
+<h3>Access to existing data</h3>
+
+<p>If we provide access to existing databases as though they were in hypertext
+form, the system will get off the ground quicker. This is discussed further
+below.</p>
+
+<h3>Private links</h3>
+
+<p>One must be able to add one's own private links to and from public
+information. One must also be able to annotate links, as well as nodes,
+privately.</p>
+
+<h3>Bells and Whistles</h3>
+
+<p>Storage of ASCII text, and display on 24x80 screens, is in the short term
+sufficient, and essential. Addition of graphics would be an optional extra
+with very much less penetration for the moment.</p>
+
+<h3>Data analysis</h3>
+
+<p>An intriguing possibility, given a large hypertext database with typed
+links, is that it allows some degree of automatic analysis. It is possible to
+search, for example, for anomalies such as undocumented software or divisions
+which contain no people. It is possible to generate lists of people or devices
+for other purposes, such as mailing lists of people to be informed of changes.
+It is also possible to look at the topology of an organisation or a project,
+and draw conclusions about how it should be managed, and how it could evolve.
+This is particularly useful when the database becomes very large, and groups
+of projects, for example, so interwoven as to make it difficult to see the
+wood for the trees.</p>
+
+<p>In a complex place like CERN, it's not always obvious how to divide people
+into groups. Imagine making a large three-dimensional model, with people
+represented by little spheres, and strings between people who have something
+in common at work.</p>
+
+<p>Now imagine picking up the structure and shaking it, until you make some
+sense of the tangle: perhaps, you see tightly knit groups in some places, and
+in some places weak areas of communication spanned by only a few people.
+Perhaps a linked information system will allow us to see the real structure of
+the organisation in which we work.</p>
+
+<h3>Live links</h3>
+
+<p>The data to which a link (or a hot spot) refers may be very static, or it
+may be temporary. In many cases at CERN information about the state of systems
+is changing all the time. Hypertext allows documents to be linked into "live"
+data so that every time the link is followed, the information is retrieved. If
+one sacrifices portability, it is possible so make following a link fire up a
+special application, so that diagnostic programs, for example, could be linked
+directly into the maintenance guide.</p>
+
+<h3>Non requirements</h3>
+
+<p>Discussions on Hypertext have sometimes tackled the problem of copyright
+enforcement and data security. These are of secondary importance at CERN,
+where information exchange is still more important than secrecy. Authorisation
+and accounting systems for hypertext could conceivably be designed which are
+very sophisticated, but they are not proposed here.</p>
+
+<p>In cases where reference must be made to data which is in fact protected,
+existing file protection systems should be sufficient.</p>
+
+<h2>Specific Applications</h2>
+
+<p>The following are three examples of specific places in which the proposed
+system would be immediately useful. There are many others.</p>
+
+<h3>Development Project Documentation.</h3>
+
+<p>The Remote procedure Call project has a skeleton description using Enquire.
+Although limited, it is very useful for recording who did what, where they
+are, what documents exist, etc. Also, one can keep track of users, and can
+easily append any extra little bits of information which come to hand and have
+nowhere else to be put. Cross-links to other projects, and to databases which
+contain information on people and documents would be very useful, and save
+duplication of information.</p>
+
+<h3>Document retrieval.</h3>
+
+<p>The CERNDOC system provides the mechanics of storing and printing
+documents. A linked system would allow one to browse through concepts,
+documents, systems and authors, also allowing references between documents to
+be stored. (Once a document had been found, the existing machinery could be
+invoked to print it or display it).</p>
+
+<h3>The "Personal Skills Inventory".</h3>
+
+<p>Personal skills and experience are just the sort of thing which need
+hypertext flexibility. People can be linked to projects they have worked on,
+which in turn can be linked to particular machines, programming languages,
+etc.</p>
+
+<h2>The State of the Art in Hypermedia</h2>
+
+<p>An increasing amount of work is being done into hypermedia research at
+universities and commercial research labs, and some commercial systems have
+resulted. There have been two conferences, Hypertext '87 and '88, and in
+Washington DC, the National Institute of Standards and Technology (NST) hosted
+a workshop on standardisation in hypertext, a followup of which will occur
+during 1990.</p>
+
+<p>The Communications of the ACM special issue on Hypertext contains many
+references to hypertext papers. A bibliography on hypertext is given in
+[NIST90], and a uucp newsgroup alt.hypertext exists. I do not, therefore, give
+a list here.</p>
+
+<h3>Browsing techniques</h3>
+
+<p>Much of the academic research is into the human interface side of browsing
+through a complex information space. Problems addressed are those of making
+navigation easy, and avoiding a feeling of being "lost in hyperspace". Whilst
+the results of the research are interesting, many users at CERN will be
+accessing the system using primitive terminals, and so advanced window styles
+are not so important for us now.</p>
+
+<h3>Interconnection or publication?</h3>
+
+<p>Most systems available today use a single database. This is accessed by
+many users by using a distributed file system. There are few products which
+take Ted Nelson's idea of a wide "docuverse" literally by allowing links
+between nodes in different databases. In order to do this, some
+standardisation would be necessary. However, at the standardisation workshop,
+the emphasis was on standardisation of the format for exchangeable media, nor
+for networking. This is prompted by the strong push toward publishing of
+hypermedia information, for example on optical disk. There seems to be a
+general consensus about the abstract data model which a hypertext system
+should use.</p>
+
+<p>Many systems have been put together with little or no regard for
+portability, unfortunately. Some others, although published, are proprietary
+software which is not for external release. However, there are several
+interesting projects and more are appearing all the time. Digital's "Compound
+Document Architecture" (CDA) , for example, is a data model which may be
+extendible into a hypermedia model, and there are rumours that this is a way
+Digital would like to go.</p>
+
+<h3>Incentives and CALS</h3>
+
+<p>The US Department of Defence has given a big incentive to hypermedia
+research by, in effect, specifying hypermedia documentation for future
+procurement. This means that all manuals for parts for defence equipment must
+be provided in hypermedia form. The acronym CALS stands for Computer-aided
+Acquisition and Logistic Support).</p>
+
+<p>There is also much support from the publishing industry, and from
+librarians whose job it is to organise information.</p>
+
+<h3>What will the system look like?</h3>
+
+<p>Let us see what components a hypertext system at CERN must have. The only
+way in which sufficient flexibility can be incorporated is to separate the
+information storage software from the information display software, with a
+well defined interface between them. Given the requirement for network access,
+it is natural to let this clean interface coincide with the physical division
+between the user and the remote database machine.</p>
+
+<p>This division also is important in order to allow the heterogeneity which
+is required at CERN (and would be a boon for the world in general).</p>
+
+<figure>
+<img src="images/Image2.gif" alt="browser runs on many platforms">
+
+<figcaption>Fig 2. A client/server model for a distributed hypertext
+system.</figcaption>
+</figure>
+
+<p>Therefore, an important phase in the design of the system is to define this
+interface. After that, the development of various forms of display program and
+of database server can proceed in parallel. This will have been done well if
+many different information sources, past, present and future, can be mapped
+onto the definition, and if many different human interface programs can be
+written over the years to take advantage of new technology and standards.</p>
+
+    <a href = "proposalfrontpage.html"> Take me back home </a></p>
+
+</html>

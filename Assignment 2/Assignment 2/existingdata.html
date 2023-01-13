@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Existing Data and How to Access it</title>
+    <link rel="stylesheet" href="css/stylesidepage.css">
+    <style>
+        h2 {text-align: center;}
+        p {text-align: center;}
+        </style>
+</head>
+
+<h2 id = "accessingExistingData">Accessing Existing Data</h2>
+
+<p>The system must achieve a critical usefulness early on. Existing hypertext
+systems have had to justify themselves solely on new data. If, however, there
+was an existing base of data of personnel, for example, to which new data
+could be linked, the value of each new piece of data would be greater.</p>
+
+<p>What is required is a gateway program which will map an existing structure
+onto the hypertext model, and allow limited (perhaps read-only) access to it.
+This takes the form of a hypertext server written to provide existing
+information in a form matching the standard interface. One would not imagine
+the server actually generating a hypertext database from and existing one:
+rather, it would generate a hypertext view of an existing database.</p>
+
+<figure>
+<img src="images/Image3.gif" alt="path between the database, the server and the browser">
+<figcaption>Fig 3. A hypertext gateway allows existing data to be seen in hypertext
+form by a hypertext browser.</figcaption>
+</figure>
+
+<p>Some examples of systems which could be connected in this way are</p>
+<dl>
+  <dt>uucp News</dt>
+    <dd>This is a Unix electronic conferencing system. A server for uucp news
+      could makes links between notes on the same subject, as well as showing
+      the structure of the conferences.</dd>
+  <dt>VAX/Notes</dt>
+    <dd>This is Digital's electronic conferencing system. It has a fairly wide
+      following in FermiLab, but much less in CERN. The topology of a
+      conference is quite restricting.</dd>
+  <dt>CERNDOC</dt>
+    <dd>This is a document registration and distribution system running on
+      CERN's VM machine. As well as documents, categories and projects,
+      keywords and authors lend themselves to representation as hypertext
+      nodes.</dd>
+  <dt>File systems</dt>
+    <dd>This would allow any file to be linked to from other hypertext
+      documents.</dd>
+  <dt>The Telephone Book</dt>
+    <dd>Even this could even be viewed as hypertext, with links between people
+      and sections, sections and groups, people and floors of buildings,
+    etc.</dd>
+  <dt>The unix manual</dt>
+    <dd>This is a large body of computer-readable text, currently organised in
+      a flat way, but which also contains link information in a standard
+      format ("See also..").</dd>
+  <dt>Databases</dt>
+    <dd>A generic tool could perhaps be made to allow any database which uses
+      a commercial DBMS to be displayed as a hypertext view.</dd>
+</dl>
+
+<p>In some cases, writing these servers would mean unscrambling or obtaining
+details of the existing protocols and/or file formats. It may not be practical
+to provide the full functionality of the original system through hypertext. In
+general, it will be more important to allow read access to the general public:
+it may be that there is a limited number of people who are providing the
+information, and that they are content to use the existing facilities.</p>
+
+<p>It is sometimes possible to enhance an existing storage system by coding
+hypertext information in, if one knows that a server will be generating a
+hypertext representation. In 'news' articles, for example, one could use (in
+the text) a standard format for a reference to another article. This would be
+picked out by the hypertext gateway and used to generate a link to that note.
+This sort of enhancement will allow greater integration between old and new
+systems.</p>
+
+<p>There will always be a large number of information management systems - we
+get a lot of added usefulness from being able to cross-link them. However, we
+will lose out if we try to constrain them, as we will exclude systems and
+hamper the evolution of hypertext in general.</p>
+
+
+    <a href = "proposalfrontpage.html"> Take me back home </a></p>
+
+</html>
