@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Repreoduce a Painting (with draggable objects)</title>
+    
+       
+    <link rel="stylesheet" href="styledrag.css">
+    
+      
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <h1>Can **You** Match the Painting?</h1>
+    
+    <script>
+  $( function() {
+    $( "#blackTriangle" ).draggable();
+    $( "#redTriangle" ).draggable();
+    $( "#yellowTriangle" ).draggable();
+    $( "#whiteTriangle1" ).draggable();
+    $( "#whiteTriangle2" ).draggable();
+    $( "#greyTriangle1" ).draggable();
+    $( "#greyTriangle2" ).draggable();
+    $( "#greyTriangle3" ).draggable();
+  } );
+  </script>
+</head>
+<body>
+
+    <div id="blackTriangle"></div>
+    <div id="redTriangle"></div>
+    <div id="yellowTriangle"></div>
+    <div id="whiteTriangle1"></div>
+    <div id="whiteTriangle2"></div>
+    <div id="greyTriangle1"></div>
+    <div id="greyTriangle2"></div>
+    <div id="greyTriangle3"></div>
+
+    <img src="matchthepainting.jpg" class="floatRight">
+</body>
+</html>
