@@ -3,8 +3,14 @@ body{
     background-color: beige;
 }
 
-#blackTriangle {
-    left: 100px;  
+.shapes {
+    position: relative;
+}
+
+.blackTriangle {
+    position: absolute;
+
+    left: 100px; 
     top: 100px;
 
     width: 0;
@@ -14,10 +20,12 @@ body{
     border-bottom: 100px solid transparent;
     align-self: center;
 
+    animation: moveshapes 5s infinite;
 }
 
-#redTriangle {
-    left: 100px;  
+.redTriangle {
+    position: absolute;
+    left: 300px;  
     top: 100px;
 
     width: 0;
@@ -27,11 +35,13 @@ body{
     border-bottom: 100px solid transparent;
     align-self: center;
 
+    animation: moveshapes 5s infinite;
 }
 
-#yellowTriangle {
-    left: 100px;  
-    top: 100px;
+.yellowTriangle {
+    position: absolute;
+    left: 50px;  
+    top: 0px;
 
     width: 0;
     height: 0;
@@ -40,9 +50,11 @@ body{
     border-bottom: 50px solid transparent;
     align-self: center;
 
+    animation: moveshapes 5s infinite;
 }
 
-#whiteTriangle1 {
+.whiteTriangle1 {
+    position: absolute;
     left: 100px;  
     top: 100px;
 
@@ -53,9 +65,11 @@ body{
     border-bottom: 100px solid white;
     align-self: center;
 
+    animation: moveshapes 5s infinite;
 }
 
-#whiteTriangle2 {
+.whiteTriangle2 {
+    position: absolute;
     left: 100px;  
     top: 100px;
 
@@ -66,9 +80,11 @@ body{
     border-bottom: 100px solid transparent;
     align-self: center;
 
+    animation: moveshapes 5s infinite;
 }
 
-#greyTriangle1 {
+.greyTriangle1 {
+    position: absolute;
     left: 100px;  
     top: 100px;
 
@@ -78,9 +94,11 @@ body{
     border-right: 100px solid transparent;
     align-self: center;
 
+    animation: moveshapes 5s infinite;
 }
 
-#greyTriangle2 {
+.greyTriangle2 {
+    position: absolute;
     left: 100px;  
     top: 100px;
 
@@ -90,9 +108,11 @@ body{
     border-right: 100px solid transparent;
     align-self: center;
 
+    animation: moveshapes 5s infinite;
 }
 
-#greyTriangle3 {
+.greyTriangle3 {
+    position: absolute;
     left: 100px;  
     top: 100px;
 
@@ -103,6 +123,11 @@ body{
     border-top: 100px solid grey;
     align-self: center;
 
+    animation: moveshapes 5s infinite;
 }
 
-.floatRight{float:right;margin-left:20px}
+
+@keyframes moveshapes {
+    from {top: 100px;}
+    to {top: 300px;}
+  }
