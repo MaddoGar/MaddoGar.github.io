@@ -1,0 +1,38 @@
+body {
+    background-image: linear-gradient(white, rgb(235, 170, 51));
+    background-attachment: fixed;
+    }
+
+    .bubble {
+        position: relative;
+        background: white;
+        border-radius: .4em;
+        width: 500px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        color:white;
+      }
+      
+      .bubble:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: 20px solid transparent;
+        border-top-color: black;
+        border-bottom: 0;
+        margin-left: -20px;
+        margin-bottom: -20px;
+      }
+
+      .Rin{
+        position:fixed;
+        bottom:0px;
+        left:50%;
+        margin-left: -180px;
+        width: 300px;
+       height: 400px;
+    }
