@@ -1,0 +1,33 @@
+body{
+    background-image:url(space.jpg);
+    background-color: black;
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+  
+}
+
+.astro {
+    animation: MoveUpDown 1s linear infinite;
+    content: url('astronaut.png');
+    background: rgb(229, 237, 156);
+    border-radius: 50%;
+    width: 150px;
+    height: 140px;
+    position: relative;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      top: 0;
+    }
+    50% {
+      top: 100px;
+    }
+  }
+
