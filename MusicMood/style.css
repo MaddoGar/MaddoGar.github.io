@@ -1,5 +1,5 @@
 body {
-    background-color: pink;
+    background-color: white;
     }
 
     .gallery img {
@@ -10,6 +10,12 @@ body {
         opacity: 0.6;
       }
       
+      h1 {
+        color: black;
+        font-family: verdana;
+        font-size: 300%;
+      }
+
       .gallery {
         display: flex;
         flex-wrap: wrap;
@@ -26,42 +32,36 @@ body {
         width: 150px;
         height: 150px;
         background-size: cover;
-        background-color: pink;
+        background-image: url('red.jpg');
         }
 
         #crying {
             width: 150px;
             height: 150px;
             background-size: cover;
-            background-color: pink;
+            background-image: url('blue.png');
             }
 
             #anxiety {
                 width: 150px;
                 height: 150px;
                 background-size: cover;
-                background-color: pink;
+                background-image: url('purple.jpg');
                 }
             
                 #cheesin {
                     width: 150px;
                     height: 150px;
                     background-size: cover;
-                    background-color: pink;
+                    background-image: url('yellow.pgn.png');
                     }
 
-            #party {
-                width: 150px;
-                height: 150px;
-                background-size: cover;
-                background-color: pink;
-                }
 
                 #heart {
                     width: 150px;
                     height: 150px;
                     background-size: cover;
-                    background-color: pink;
+                    background-image: url('pink.jpg');
                     }
 
                     #iframeholder {
